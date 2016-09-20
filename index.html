@@ -77,12 +77,21 @@ animation-timing-function: cubic-bezier(0.1,0.1,0.3,1);
 			.saytriangle{width: 0;height: 0;border-top: 11px solid #20A63C;border-left: 10px solid transparent;position: absolute;top: 0;left: 110px;}
 			.topost{margin: 0 0 0 119px;}
 			.mypost{float: left;background-color: #20A63C;padding: 10px;max-width: 300px;color: #FFF;font-size: 14px;border-radius: 0 3px 3px 3px;}
+			.TE2{border-radius: 50%;display: block;float: left;padding: 20px;}
 			.bascinfo{display: block;float: left;margin: 0 15px;width: calc(100% - 280px);min-width: 240px;}
 			.ihavedli{max-width: 800px;margin: 0 auto;}
 			.ihaved{float: left;width: 25%;text-align: center;}
 			.ihaved img{width: 80%;border-radius: 20%;display: block;margin: 0 auto;}
 			.ihaved>p{display: block;}
 			.hli img{border-radius: 50%;margin-bottom: 20px;}
+			@media only screen and (max-width: 864px) {
+				.by853>img{float:none;margin:0 auto;}
+				.by853>.nameandinfo{float:none;max-width:calc(100% - 30px);min-width:0px;width:100%;}
+			}
+			@media only screen and (max-width: 774px) {
+				.TE2{float:none;margin:0 auto;}
+				.bascinfo{float:none;max-width:calc(100% - 30px);min-width:0px;width:100%;}
+			}
 			@media only screen and (max-width: 720px) {
 				.menu{left: -190px;background-color: rgba(240,240,240,1);z-index: 16;}
 				.menu.on{left: 0px;}
@@ -194,7 +203,7 @@ to {top: 0px;opacity: 1;}
 					<div class="content">
 						<div class="dok">
 							<h1>基本信息</h1>
-							<img src="img/853_TE.png" style="border-radius: 50%;display: block;float: left;padding: 20px;"/>
+							<img class="TE2" src="img/853_TE.png"/>
 							<div class="bascinfo">
 								<p>姓名：覃硕凯</p>
 								<p>性别：男</p>
@@ -223,7 +232,7 @@ to {top: 0px;opacity: 1;}
 									<div style="background-color: rgba(6,150,0,1);width: 50%;"><span>JQuery</span></div>
 								</div>
 								<div class="kphp">
-									<div style="background-color: rgba(153,153,204,1);width: 35%;"><span>PHP</span></div>
+									<div style="background-color: rgba(153,153,204,1);width: 55%;"><span>PHP</span></div>
 								</div>
 								<div class="kgit">
 									<div style="background-color: rgba(115,44,134,1);width: 30%;"><span>Git</span></div>
@@ -265,7 +274,7 @@ to {top: 0px;opacity: 1;}
 							<div class="ihavedli">
 								<div class="ihaved">
 									<img src="img/phpSQLite3adminiapple.png"/>
-									<p>容县都峤中学十大歌手第一名</p>
+									<p>2016年南宁六职校技能节网页制作一等奖</p>
 								</div>
 								<div class="ihaved">
 									<img src="img/phpSQLite3adminiapple.png"/>
@@ -280,7 +289,7 @@ to {top: 0px;opacity: 1;}
 					<div class="content">
 						<h1>个人经历</h1>
 						<div class="dok">
-							<h1>南宁第六职业技术学校 <span style="font-size: 12px;">（2014 年至今）</span></h1>
+							<h1>南宁第六职业技术学校 <span style="font-size: 12px;">（2014 年至 2016）</span></h1>
 							<p style="text-indent: 1em;">计算机网络专业 <span style="font-size: 12px;">14网络2班</span></p>
 							<p>已确定向网站前端、后端发展，在校期间加强自己的个人素质，以及巩固自己的前端知识。课余时间学习绘画。</p>
 						</div>
@@ -300,18 +309,23 @@ to {top: 0px;opacity: 1;}
 					<div class="content">
 						<h1>参与项目</h1>
 						<div class="dok">
-							<h1>HackNet汉化项目 <span style="font-size: 12px;">- 2016.03</span></h1>
+							<h1>HackNet汉化项目 <span style="font-size: 12px;">- 2016.03</span> <a href="http://veno.site/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">为网友发起的汉化项目，主要翻译游戏中的剧情使其可读。</p>
 							<img src="img/header.jpg" width="200px"/>
 						</div>
+						<div class="dok">
+							<h1>Hamagame主页美化 <span style="font-size: 12px;">- 2015.12</span> <a href="http://hamagame.com/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
+							<p style="text-indent: 1em;">为网友搭建的网站，本人负责美化首页。</p>
+							<img src="img/搜狗截图20160921002430.png" width="200px"/>
+						</div>
 						<h1>个人项目</h1>
 						<div class="dok">
-							<h1>853的个人简历V2 <span style="font-size: 12px;">- 2016.05</span></h1>
+							<h1>853的个人简历V2 <span style="font-size: 12px;">- 2016.05</span> <a href="http://page.bronya.net/853-resume/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">视觉优良，内容丰富的个人简历，使用DIV+CSS制作（已弃用V1版本</p>
 							<img src="img/搜狗截图20160511184717.png" width="200px"/>
 						</div>
 						<div class="dok">
-							<h1>哔哩哔哩个性化个人简介 <span style="font-size: 12px;">- 2016.02</span></h1>
+							<h1>哔哩哔哩个性化个人简介 <span style="font-size: 12px;">- 2016.02</span> <a href="https://github.com/Sonic853/Bilibili-Live-Profile-853-style" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">使用DIV+CSS自定义简介样式</p>
 							<img src="img/20160510164141.png" width="200px"/>
 						</div>
@@ -321,7 +335,7 @@ to {top: 0px;opacity: 1;}
 							<img src="img/01.jpg" width="200px"/>
 						</div>
 						<div class="dok">
-							<h1>Sonic853的个人博客 <span style="font-size: 12px;">- 2013.08 至今</span></h1>
+							<h1>Sonic853的个人博客 <span style="font-size: 12px;">- 2013.08 至今</span> <a href="http://853.bronya.net/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">基于 WordPress 博客系统搭建，搭建并精心维护，每天有60以上的流量量</p>
 							<img src="img/搜狗截图20160511184921.png" width="200px"/>
 						</div>
