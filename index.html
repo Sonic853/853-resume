@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -38,7 +39,8 @@
 			.menu>.links>a{line-height:45px;display: inline-block;width: 25%;text-align: center;}
 			.main{position: absolute;top: 51px;left: 190px;bottom: 0;right: 0;overflow-x: hidden;overflow-y: auto;background-color: rgba(255,255,255,0.3);}
 			.main>div{padding: 10px;}
-			.main>div{position: relative;
+			.main>div>div>*{
+position: relative;
 animation:mymove 0.7s;
 -moz-animation:mymove 0.7s; /* Firefox */
 -webkit-animation:mymove 0.7s; /* Safari and Chrome */
@@ -77,7 +79,7 @@ animation-timing-function: cubic-bezier(0.1,0.1,0.3,1);
 			.saytriangle{width: 0;height: 0;border-top: 11px solid #20A63C;border-left: 10px solid transparent;position: absolute;top: 0;left: 110px;}
 			.topost{margin: 0 0 0 119px;}
 			.mypost{float: left;background-color: #20A63C;padding: 10px;max-width: 300px;color: #FFF;font-size: 14px;border-radius: 0 3px 3px 3px;}
-			.TE2{border-radius: 50%;display: block;float: left;padding: 20px;}
+			.TE2{border-radius: 50%;display: block;float: left;padding: 20px;width:200px;}
 			.bascinfo{display: block;float: left;margin: 0 15px;width: calc(100% - 280px);min-width: 240px;}
 			.ihavedli{max-width: 800px;margin: 0 auto;}
 			.ihaved{float: left;width: 25%;text-align: center;}
@@ -101,29 +103,30 @@ animation-timing-function: cubic-bezier(0.1,0.1,0.3,1);
 				.main{left: 37px;}
 				.mobile-menu{display: block;}
 				.bak.on{display: block;z-index: 15;position: absolute;top: 51px;bottom: 0;left: 0;right: 0;}
+				.nameandinfo>p{text-align:center;text-indent: 0em;}
 			}
 			@keyframes mymove
 {
-from {top: 70px;opacity: 0;}
-to {top: 0px;opacity: 1;}
+from {margin-top: 70px;opacity: 0;}
+to {margin-top: 0px;opacity: 1;}
 }
 
 @-moz-keyframes mymove /* Firefox */
 {
-from {top: 70px;opacity: 0;}
-to {top: 0px;opacity: 1;}
+from {margin-top: 70px;opacity: 0;}
+to {margin-top: 0px;opacity: 1;}
 }
 
 @-webkit-keyframes mymove /* Safari 和 Chrome */
 {
-from {top: 70px;opacity: 0;}
-to {top: 0px;opacity: 1;}
+from {margin-top: 70px;opacity: 0;}
+to {margin-top: 0px;opacity: 1;}
 }
 
 @-o-keyframes mymove /* Opera */
 {
-from {top: 70px;opacity: 0;}
-to {top: 0px;opacity: 1;}
+from {margin-top: 70px;opacity: 0;}
+to {margin-top: 0px;opacity: 1;}
 }
 		</style>
 	</head>
@@ -145,7 +148,7 @@ to {top: 0px;opacity: 1;}
 			<div id="menu" class="menu">
 				<a href="#" class="buttom"><div class="mico-menu"></div></a>
 				<div class="links">
-					<a href="#"><div class="mico-home"></div></a><a href="#"><div class="mico-logout"></div></a><a href="#"><div class="mico-setting"></div></a><a href="#"><div class="mico-reload"></div></a>
+					<a href="https://blog.853lab.com" target="_blank"><div class="mico-home"></div></a><a href="javascript:alert('没卵用')"><div class="mico-logout"></div></a><a href="javascript:alert('并没有什么卵用')"><div class="mico-setting"></div></a><a href="index.html"><div class="mico-reload"></div></a>
 				</div>
 				<ol class="list">
 					<li id="li-index" class="hover"><a href="#"><div class="base"></div>首页</a></li>
@@ -159,13 +162,13 @@ to {top: 0px;opacity: 1;}
 					<!--<h1>About me</h1>-->
 					<div class="content">
 						<div class="by853 dok">
-							<img src="img/853_TE.png" />
+							<img src="img/5573982face.png" />
 							<div class="nameandinfo">
 								<p style="font-size: 40px;margin: 0;">覃硕凯</p>
-								<p style="color: rgba(0,0,0,0.5);font-size: 11px;text-indent: 2em;">前端开发 / 汉化 / 图像处理制作</p>
+								<p style="color: rgba(0,0,0,0.5);font-size: 11px;text-indent: 2em;">前端&后端开发 / 汉化 / 图像处理制作</p>
 								<p>心仪职位：Web 前端工程师</p>
 								<p>E-mail：853@bh3rd.net</p>
-								<p style="">目前暂无工作，按自己的爱好制作作品，参与感兴趣的项目，并努力学习新的知识。</p>
+								<p style="">目前暂无工作，按自己的爱好制作作品，并努力学习新的知识。</p>
 							</div>
 							<div style="clear: both;"></div>
 						</div>
@@ -173,7 +176,7 @@ to {top: 0px;opacity: 1;}
 							<h1>在哪里可以找到我</h1>
 							<div class="ihavedli hli">
 								<div class="ihaved">
-									<a href="http://853.bronya.net" target="_blank"><img src="img/105925zqrrcgckxbsptqdi.png"/></a>
+									<a href="https://blog.853lab.com" target="_blank"><img src="img/105925zqrrcgckxbsptqdi.png"/></a>
 									<p>Sonic853的博客</p>
 								</div>
 								<div class="ihaved">
@@ -185,14 +188,14 @@ to {top: 0px;opacity: 1;}
 									<p>Github</p>
 								</div>
 								<div class="ihaved">
-									<a href="tencent://message/?uin=337928984$Site=http://853.bronya.net&Menu=yes"><img src="img/141149thmzfrgizvwfk0mzl.png"/></a>
+									<a href="tencent://message/?uin=337928984$Site=https://blog.853lab.com&Menu=yes"><img src="img/141149thmzfrgizvwfk0mzl.png"/></a>
 									<p>QQ 337928984</p>
 								</div>
 								<div style="clear: both;"></div>
 							</div>
 						</div>
 						<div class="mysay">
-							<img src="img/853_TE.png" />
+							<img src="img/5573982face.png" />
 							<div class="saytriangle"></div>
 							<div class="topost"><div class="mypost">_(:з」∠)_点击右侧可查看我的详细信息。<br />该网页可以在手机上浏览<br />我喜欢二次元，喜欢制作网页，拥有与众不同的设计。不喜欢 bug ，追求最好的布局（决不能有一个像素的偏差！</div></div>
 							<div style="clear: both;"></div>
@@ -203,13 +206,13 @@ to {top: 0px;opacity: 1;}
 					<div class="content">
 						<div class="dok">
 							<h1>基本信息</h1>
-							<img class="TE2" src="img/853_TE.png"/>
+							<img class="TE2" src="img/5573982face.png"/>
 							<div class="bascinfo">
 								<p>姓名：覃硕凯</p>
 								<p>性别：男</p>
 								<p>出生日期：1997 年  07 月 22 日</p>
 								<p>常用 ID：Sonic853、消失的853</p>
-								<p>教育水平：高中 / 南宁六职校计算机网络 / 2016 年应届生</p>
+								<p>教育水平：中专 / 南宁六职校计算机网络 / 2016 年应届生</p>
 								<p>英语水平：可理解计算机英语，简单的英语谈话，中等的英语文字翻译</p>
 								<p>擅长领域：前端开发、应用汉化、图形图像影视处理与制作</p>
 							</div>
@@ -273,12 +276,15 @@ to {top: 0px;opacity: 1;}
 							<h1>获得荣誉</h1>
 							<div class="ihavedli">
 								<div class="ihaved">
-									<img src="img/phpSQLite3adminiapple.png"/>
-									<p>2016年南宁六职校技能节网页制作一等奖</p>
+									<img src="img/IMG_20161009_171828-s.jpg"/>
+									<p>2016年南宁六职校技能节网页制作一等奖<a href="img/IMG_20161009_171828.jpg" style="font-size: 12px;" target="_blank">查看</a></p>
 								</div>
 								<div class="ihaved">
-									<img src="img/phpSQLite3adminiapple.png"/>
-									<p>2015年南宁六职校技能节网页制作二等奖</p>
+									<img src="img/IMG_20161009_171818-s.jpg"/>
+									<p>2015年南宁六职校技能节技能能手<a href="img/IMG_20161009_171818.jpg" style="font-size: 12px;" target="_blank">查看</a></p>
+								</div>											<div class="ihaved">
+									<img src="img/IMG_20161009_171823-s.jpg"/>
+									<p>2015年南宁六职校技能节网页制作二等奖<a href="img/IMG_20161009_171823.jpg" style="font-size: 12px;" target="_blank">查看</a></p>
 								</div>
 								<div style="clear: both;"></div>
 							</div>
@@ -288,6 +294,11 @@ to {top: 0px;opacity: 1;}
 				<div id="pg-mytogo" class="none">
 					<div class="content">
 						<h1>个人经历</h1>
+						<div class="dok">
+							<h1>容县碧桂园 <span style="font-size: 12px;">（2016 年至今）</span></h1>
+							<p style="text-indent: 1em;">礼宾员</p>
+							<p><del>毕业后老妈给我找的职位</del>（万万没想到）</p>
+						</div>
 						<div class="dok">
 							<h1>南宁第六职业技术学校 <span style="font-size: 12px;">（2014 年至 2016）</span></h1>
 							<p style="text-indent: 1em;">计算机网络专业 <span style="font-size: 12px;">14网络2班</span></p>
@@ -316,13 +327,17 @@ to {top: 0px;opacity: 1;}
 						<div class="dok">
 							<h1>Hamagame主页美化 <span style="font-size: 12px;">- 2015.12</span> <a href="http://hamagame.com/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">为网友搭建的网站，本人负责美化首页。</p>
-							<img src="img/搜狗截图20160921002430.png" width="200px"/>
+							<img src="img/20160921002430.png" width="200px"/>
 						</div>
 						<h1>个人项目</h1>
 						<div class="dok">
-							<h1>853的个人简历V2 <span style="font-size: 12px;">- 2016.05</span> <a href="http://page.bronya.net/853-resume/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
+							<h1>WebDesktop10 <span style="font-size: 12px;">- 2016.05</span> <a href="https://github.com/Sonic853/WebDesktop10" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
+							<p style="text-indent: 1em;">一个桌面，采用HTML+CSS+JavaScript制作</p>
+							<img src="img/9171314.png" width="200px"/>
+						</div>											<div class="dok">
+							<h1>853的个人简历V2 <span style="font-size: 12px;">- 2016.05</span> <a href="http://page.853lab.com/853-resume/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">视觉优良，内容丰富的个人简历，使用DIV+CSS制作（已弃用V1版本</p>
-							<img src="img/搜狗截图20160511184717.png" width="200px"/>
+							<img src="img/20160511184717.png" width="200px"/>
 						</div>
 						<div class="dok">
 							<h1>哔哩哔哩个性化个人简介 <span style="font-size: 12px;">- 2016.02</span> <a href="https://github.com/Sonic853/Bilibili-Live-Profile-853-style" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
@@ -335,9 +350,9 @@ to {top: 0px;opacity: 1;}
 							<img src="img/01.jpg" width="200px"/>
 						</div>
 						<div class="dok">
-							<h1>Sonic853的个人博客 <span style="font-size: 12px;">- 2013.08 至今</span> <a href="http://853.bronya.net/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
+							<h1>Sonic853的个人博客 <span style="font-size: 12px;">- 2013.08 至今</span> <a href="//blog.853lab.com/" style="font-size: 12px;" target="_blank">点击跳转</a></h1>
 							<p style="text-indent: 1em;">基于 WordPress 博客系统搭建，搭建并精心维护，每天有60以上的流量量</p>
-							<img src="img/搜狗截图20160511184921.png" width="200px"/>
+							<img src="img/20160511184921.png" width="200px"/>
 						</div>
 					</div>
 				</div>
